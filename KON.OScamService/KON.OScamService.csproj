@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>KON.OScamService</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net9.0-windows10.0.17763.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>KON.OScamService</RootNamespace>
+    <StartupObject>KON.OScamService.Program</StartupObject>
+    <ApplicationIcon>properties\KON.OScamService.ico</ApplicationIcon>
+    <AppDesignerFolder>properties</AppDesignerFolder>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="code\form\Configuration.Designer.cs~RF7df0ce7.TMP" />
+    <None Remove="CODE\FORM\Configuration.Designer.cs~RFeb349bb.TMP" />
+    <None Remove="CODE\FORM\Configuration.resx~RFe6f680c.TMP" />
+    <None Remove="properties\Resources.Designer.cs~RF8fa5c5f.TMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="properties\KON.OScamService.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Core.System.ServiceProcess" Version="2.0.1" />
+    <PackageReference Include="Topshelf" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CODE\SERIVCE\Configuration.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Configuration.resx</DependentUpon>
+    </Compile>
+    <Compile Update="properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="CODE\SERIVCE\Configuration.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Configuration.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="3rdparty\openssl\1.1.1w\x86\" />
+  </ItemGroup>
+</Project>
