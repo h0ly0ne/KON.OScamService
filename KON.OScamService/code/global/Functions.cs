@@ -35,7 +35,7 @@ namespace KON.OScamService {
         }
 
         private static string GetExecutionPath() {
-            return srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScam_BinaryFilepath, Resources.frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue)?.ToLower();
+            return srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScamBinaryFilepath, Resources.frmConfiguration_srsKeyOScamBinaryFilepath_DefaultValue)?.ToLower();
         }
 
         private static string ReplaceExecutionPathWindowsToUnix()
@@ -48,7 +48,7 @@ namespace KON.OScamService {
         }
 
         internal static List<Process> GetAllOScamProcesses() {
-            return Process.GetProcesses().Where(process => process.ProcessName.Equals(srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScam_BinaryTitle, Resources.frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue))).ToList();
+            return Process.GetProcesses().Where(process => process.ProcessName.Equals(srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScamBinaryTitle, Resources.frmConfiguration_srsKeyOScamBinaryTitle_DefaultValue))).ToList();
         }
 
         private static void KillAllOScamProcesses() {
@@ -56,8 +56,8 @@ namespace KON.OScamService {
         }
 
         internal static void StartOScam() {
-            var strOScamFilepath = GetExecutionPath() + @"\" + srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScam_BinaryFilename, Resources.frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue);
-            var strArguments = "-B" + string.Empty.Space() + "oscam.pid" + string.Empty.Space() + "-w" + string.Empty.Space() + "0" + string.Empty.Space() + "-c" + string.Empty.Space() + "'" + ReplaceExecutionPathWindowsToUnix() + "'" + string.Empty.Space() + "-t" + string.Empty.Space() + "'" + ReplaceExecutionPathWindowsToUnix() + "/temp'" + string.Empty.Space() + "-r" + string.Empty.Space() + "2" + string.Empty.Space() + srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyAdditionalStartupParameters, Resources.frmConfiguration_srsKeyAdditionalStartupParameters_DefaultValue);
+            var strOScamFilepath = GetExecutionPath() + @"\" + srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScamBinaryFilename, Resources.frmConfiguration_srsKeyOScamBinaryFilename_DefaultValue);
+            var strArguments = "-B" + string.Empty.Space() + "oscam.pid" + string.Empty.Space() + "-w" + string.Empty.Space() + "0" + string.Empty.Space() + "-c" + string.Empty.Space() + "'" + ReplaceExecutionPathWindowsToUnix() + "'" + string.Empty.Space() + "-t" + string.Empty.Space() + "'" + ReplaceExecutionPathWindowsToUnix() + "/temp'" + string.Empty.Space() + "-r" + string.Empty.Space() + "2" + string.Empty.Space() + srsLocalRegistrySettings.GetString(Resources.frmConfiguration_srsKeyOScamAdditionalParameters, Resources.frmConfiguration_srsKeyOScamAdditionalParameters_DefaultValue);
 
             if (DoesOScamBinaryExist(strOScamFilepath)) {
                 welCurrentWindowsEventLogger.WriteEntry(Resources.OScam_StartOScam + string.Empty.Space() + strOScamFilepath + string.Empty.Space() + strArguments, 0, WindowsEventLogger.LogType.Information, false);

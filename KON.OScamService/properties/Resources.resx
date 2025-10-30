@@ -123,8 +123,8 @@
   <data name="frmConfiguration_btnSave_Text" xml:space="preserve">
     <value>&amp;Save</value>
   </data>
-  <data name="frmConfiguration_srsKeyStartDelay" xml:space="preserve">
-    <value>StartDelay</value>
+  <data name="frmConfiguration_srsKeyOScamStartDelay" xml:space="preserve">
+    <value>OScamStartDelay</value>
   </data>
   <data name="Program_LogName" xml:space="preserve">
     <value>Application</value>
@@ -153,7 +153,7 @@
   <data name="frmConfiguration_srsKeyWebServiceUrl_DefaultValue" xml:space="preserve">
     <value>http://localhost:8888/oscamapi.html?part=status</value>
   </data>
-  <data name="frmConfiguration_srsKeyStartDelay_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyOScamStartDelay_DefaultValue" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="OScam_StartDelayed" xml:space="preserve">
@@ -198,10 +198,10 @@
   <data name="Service_Uninstalling_Error" xml:space="preserve">
     <value>There was an error un-/installing the service:</value>
   </data>
-  <data name="frmConfiguration_srsKeyCheckInterval" xml:space="preserve">
-    <value>CheckInterval</value>
+  <data name="frmConfiguration_srsKeyOScamCheckInterval" xml:space="preserve">
+    <value>OScamCheckInterval</value>
   </data>
-  <data name="frmConfiguration_srsKeyCheckInterval_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyOScamCheckInterval_DefaultValue" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="OScam_StartFailed" xml:space="preserve">
@@ -213,19 +213,19 @@
   <data name="frmConfiguration_srsKeyWebServiceCheckEnable_DefaultValue" xml:space="preserve">
     <value>true</value>
   </data>
-  <data name="frmConfiguration_srsKeyAdditionalStartupParameters" xml:space="preserve">
-    <value>AdditionalStartupParameters</value>
+  <data name="frmConfiguration_srsKeyOScamAdditionalParameters" xml:space="preserve">
+    <value>OScamAdditionalParameters</value>
   </data>
-  <data name="frmConfiguration_srsKeyAdditionalStartupParameters_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyOScamAdditionalParameters_DefaultValue" xml:space="preserve">
     <value>-d 0</value>
   </data>
   <data name="Service_Installing" xml:space="preserve">
     <value>Installing service at</value>
   </data>
-  <data name="frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyOScamBinaryTitle_DefaultValue" xml:space="preserve">
     <value>oscam</value>
   </data>
-  <data name="frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyOScamBinaryFilename_DefaultValue" xml:space="preserve">
     <value>oscam.exe</value>
   </data>
   <data name="OScam_RequestTimedOut" xml:space="preserve">
@@ -237,17 +237,17 @@
   <data name="OScam_ResponseDisposed" xml:space="preserve">
     <value>HttpWebResponse Dispose successful!</value>
   </data>
-  <data name="frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyOScamBinaryFilepath_DefaultValue" xml:space="preserve">
     <value>C:\Program Files\KON.OScamService\3rdparty\oscam</value>
   </data>
-  <data name="frmConfiguration_srsKeyOScam_BinaryFilepath" xml:space="preserve">
-    <value>OScam_BinaryFilepath</value>
+  <data name="frmConfiguration_srsKeyOScamBinaryFilepath" xml:space="preserve">
+    <value>OScamBinaryFilepath</value>
   </data>
-  <data name="frmConfiguration_srsKeyOScam_BinaryFilename" xml:space="preserve">
-    <value>OScam_BinaryFilename</value>
+  <data name="frmConfiguration_srsKeyOScamBinaryFilename" xml:space="preserve">
+    <value>OScamBinaryFilename</value>
   </data>
-  <data name="frmConfiguration_srsKeyOScam_BinaryTitle" xml:space="preserve">
-    <value>OScam_BinaryTitle</value>
+  <data name="frmConfiguration_srsKeyOScamBinaryTitle" xml:space="preserve">
+    <value>OScamBinaryTitle</value>
   </data>
   <data name="Program_DisplayName" xml:space="preserve">
     <value>KON.OScamService</value>

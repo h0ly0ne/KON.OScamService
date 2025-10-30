@@ -20,7 +20,7 @@ namespace KON.OScamService {
         }
 
         internal void Start() {
-            var iStartDelay = Global.srsLocalRegistrySettings.GetInteger(Resources.frmConfiguration_srsKeyStartDelay, Convert.ToInt32(Resources.frmConfiguration_srsKeyStartDelay_DefaultValue));
+            var iStartDelay = Global.srsLocalRegistrySettings.GetInteger(Resources.frmConfiguration_srsKeyOScamStartDelay, Convert.ToInt32(Resources.frmConfiguration_srsKeyOScamStartDelay_DefaultValue));
 
             if (iStartDelay > 0) {
                 Global.welCurrentWindowsEventLogger.WriteEntry(Resources.OScam_StartDelayed, 0, WindowsEventLogger.LogType.Information, false);
@@ -32,7 +32,7 @@ namespace KON.OScamService {
 
             try {
                 hcLocalHttpClient.Timeout = TimeSpan.FromSeconds(Convert.ToInt32(Global.srsLocalRegistrySettings.GetInteger(Resources.frmConfiguration_srsKeyWebServiceTimeout, Convert.ToInt32(Resources.frmConfiguration_srsKeyWebServiceTimeout_DefaultValue))));
-                tLocalCheckTimer = new Timer(TimerCallback, null, TimeSpan.Zero, TimeSpan.FromSeconds(Convert.ToInt32(Global.srsLocalRegistrySettings.GetInteger(Resources.frmConfiguration_srsKeyCheckInterval, Convert.ToInt32(Resources.frmConfiguration_srsKeyCheckInterval_DefaultValue)))));
+                tLocalCheckTimer = new Timer(TimerCallback, null, TimeSpan.Zero, TimeSpan.FromSeconds(Convert.ToInt32(Global.srsLocalRegistrySettings.GetInteger(Resources.frmConfiguration_srsKeyOScamCheckInterval, Convert.ToInt32(Resources.frmConfiguration_srsKeyOScamCheckInterval_DefaultValue)))));
             }
             catch {
                 Stop();

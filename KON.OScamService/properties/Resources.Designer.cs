@@ -79,42 +79,6 @@ namespace KON.OScamService {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die AdditionalStartupParameters ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyAdditionalStartupParameters {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyAdditionalStartupParameters", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die -d 0 ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyAdditionalStartupParameters_DefaultValue {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyAdditionalStartupParameters_DefaultValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die CheckInterval ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyCheckInterval {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyCheckInterval", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 10 ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyCheckInterval_DefaultValue {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyCheckInterval_DefaultValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die LogLevel ähnelt.
         /// </summary>
         public static string frmConfiguration_srsKeyLogLevel {
@@ -151,74 +115,110 @@ namespace KON.OScamService {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die OScam_BinaryFilename ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScamAdditionalParameters ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyOScam_BinaryFilename {
+        public static string frmConfiguration_srsKeyOScamAdditionalParameters {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilename", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamAdditionalParameters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die -d 0 ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScamAdditionalParameters_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamAdditionalParameters_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScamBinaryFilename ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScamBinaryFilename {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamBinaryFilename", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die oscam.exe ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue {
+        public static string frmConfiguration_srsKeyOScamBinaryFilename_DefaultValue {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamBinaryFilename_DefaultValue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die OScam_BinaryFilepath ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScamBinaryFilepath ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyOScam_BinaryFilepath {
+        public static string frmConfiguration_srsKeyOScamBinaryFilepath {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilepath", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamBinaryFilepath", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die C:\Program Files\KON.OScamService\3rdparty\oscam ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue {
+        public static string frmConfiguration_srsKeyOScamBinaryFilepath_DefaultValue {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamBinaryFilepath_DefaultValue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die OScam_BinaryTitle ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScamBinaryTitle ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyOScam_BinaryTitle {
+        public static string frmConfiguration_srsKeyOScamBinaryTitle {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryTitle", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamBinaryTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die oscam ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue {
+        public static string frmConfiguration_srsKeyOScamBinaryTitle_DefaultValue {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamBinaryTitle_DefaultValue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die StartDelay ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScamCheckInterval ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyStartDelay {
+        public static string frmConfiguration_srsKeyOScamCheckInterval {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyStartDelay", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamCheckInterval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 10 ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScamCheckInterval_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamCheckInterval_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScamStartDelay ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScamStartDelay {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamStartDelay", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die 0 ähnelt.
         /// </summary>
-        public static string frmConfiguration_srsKeyStartDelay_DefaultValue {
+        public static string frmConfiguration_srsKeyOScamStartDelay_DefaultValue {
             get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyStartDelay_DefaultValue", resourceCulture);
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScamStartDelay_DefaultValue", resourceCulture);
             }
         }
         
