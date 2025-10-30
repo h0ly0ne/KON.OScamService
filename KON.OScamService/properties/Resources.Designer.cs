@@ -97,24 +97,6 @@ namespace KON.OScamService {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die CheckEnable ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyCheckEnable {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyCheckEnable", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die True ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyCheckEnable_DefaultValue {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyCheckEnable_DefaultValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die CheckInterval ähnelt.
         /// </summary>
         public static string frmConfiguration_srsKeyCheckInterval {
@@ -129,24 +111,6 @@ namespace KON.OScamService {
         public static string frmConfiguration_srsKeyCheckInterval_DefaultValue {
             get {
                 return ResourceManager.GetString("frmConfiguration_srsKeyCheckInterval_DefaultValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die DelayStart ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyDelayStart {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyDelayStart", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die 0 ähnelt.
-        /// </summary>
-        public static string frmConfiguration_srsKeyDelayStart_DefaultValue {
-            get {
-                return ResourceManager.GetString("frmConfiguration_srsKeyDelayStart_DefaultValue", resourceCulture);
             }
         }
         
@@ -187,6 +151,78 @@ namespace KON.OScamService {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScam_BinaryFilename ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScam_BinaryFilename {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilename", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die oscam.exe ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScam_BinaryFilepath ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScam_BinaryFilepath {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilepath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die C:\Program Files\KON.OScamService\3rdparty\oscam ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die OScam_BinaryTitle ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScam_BinaryTitle {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die oscam ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die StartDelay ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyStartDelay {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyStartDelay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 0 ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyStartDelay_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyStartDelay_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die VerboseLogging ähnelt.
         /// </summary>
         public static string frmConfiguration_srsKeyVerboseLogging {
@@ -201,6 +237,24 @@ namespace KON.OScamService {
         public static string frmConfiguration_srsKeyVerboseLogging_DefaultValue {
             get {
                 return ResourceManager.GetString("frmConfiguration_srsKeyVerboseLogging_DefaultValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die CheckEnable ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyWebServiceCheckEnable {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyWebServiceCheckEnable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die true ähnelt.
+        /// </summary>
+        public static string frmConfiguration_srsKeyWebServiceCheckEnable_DefaultValue {
+            get {
+                return ResourceManager.GetString("frmConfiguration_srsKeyWebServiceCheckEnable_DefaultValue", resourceCulture);
             }
         }
         
@@ -241,146 +295,182 @@ namespace KON.OScamService {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die oscam.exe ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die HttpWebRequest Dispose successful! ähnelt.
         /// </summary>
-        public static string OScamService_BinaryFileName_OScam {
+        public static string OScam_RequestDisposed {
             get {
-                return ResourceManager.GetString("OScamService_BinaryFileName_OScam", resourceCulture);
+                return ResourceManager.GetString("OScam_RequestDisposed", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die oscam ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die HttpWebRequest Time-Out! ähnelt.
         /// </summary>
-        public static string OScamService_BinaryFileTitle_OScam {
+        public static string OScam_RequestTimedOut {
             get {
-                return ResourceManager.GetString("OScamService_BinaryFileTitle_OScam", resourceCulture);
+                return ResourceManager.GetString("OScam_RequestTimedOut", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Un-/Installing service at ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die HttpWebResponse Dispose successful! ähnelt.
         /// </summary>
-        public static string OScamService_Console_UnInstalling {
+        public static string OScam_ResponseDisposed {
             get {
-                return ResourceManager.GetString("OScamService_Console_UnInstalling", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die There was an error un-/installing the service: ähnelt.
-        /// </summary>
-        public static string OScamService_Console_UnInstalling_Error {
-            get {
-                return ResourceManager.GetString("OScamService_Console_UnInstalling_Error", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Restarting &quot;OScam&quot; ähnelt.
-        /// </summary>
-        public static string OScamService_Global_Logging_RestartOScam {
-            get {
-                return ResourceManager.GetString("OScamService_Global_Logging_RestartOScam", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Starting &quot;OScam&quot; with the following command: ähnelt.
-        /// </summary>
-        public static string OScamService_Global_Logging_StartOScam {
-            get {
-                return ResourceManager.GetString("OScamService_Global_Logging_StartOScam", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die There was an error starting &quot;OScam&quot; - e.g. &quot;OScam&quot; binary does not exist! ähnelt.
-        /// </summary>
-        public static string OScamService_Global_Logging_StartOScam_Error {
-            get {
-                return ResourceManager.GetString("OScamService_Global_Logging_StartOScam_Error", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die &quot;OScam&quot; processes are running. Attempting to kill all &quot;OScam&quot; processes. ähnelt.
-        /// </summary>
-        public static string OScamService_Global_Logging_StopOScam {
-            get {
-                return ResourceManager.GetString("OScamService_Global_Logging_StopOScam", resourceCulture);
+                return ResourceManager.GetString("OScam_ResponseDisposed", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die &quot;OScam&quot; restart not required! ähnelt.
         /// </summary>
-        public static string OScamService_OScam_Restart_NotRequired {
+        public static string OScam_Restart_NotRequired {
             get {
-                return ResourceManager.GetString("OScamService_OScam_Restart_NotRequired", resourceCulture);
+                return ResourceManager.GetString("OScam_Restart_NotRequired", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die &quot;OScam&quot; restart required! ähnelt.
         /// </summary>
-        public static string OScamService_OScam_Restart_Required {
+        public static string OScam_Restart_Required {
             get {
-                return ResourceManager.GetString("OScamService_OScam_Restart_Required", resourceCulture);
+                return ResourceManager.GetString("OScam_Restart_Required", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Not executed with administrative permissions - expect untested misbehavior! ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Restarting &quot;OScam&quot; ähnelt.
         /// </summary>
-        public static string OScamService_Service_AdministratorRequired {
+        public static string OScam_RestartOScam {
             get {
-                return ResourceManager.GetString("OScamService_Service_AdministratorRequired", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Application ähnelt.
-        /// </summary>
-        public static string OScamService_Service_LogName {
-            get {
-                return ResourceManager.GetString("OScamService_Service_LogName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die KON.OScamService ähnelt.
-        /// </summary>
-        public static string OScamService_Service_Name {
-            get {
-                return ResourceManager.GetString("OScamService_Service_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Press enter to exit ... ähnelt.
-        /// </summary>
-        public static string OScamService_Service_RunAsConsole {
-            get {
-                return ResourceManager.GetString("OScamService_Service_RunAsConsole", resourceCulture);
+                return ResourceManager.GetString("OScam_RestartOScam", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Service start delayed! ähnelt.
         /// </summary>
-        public static string OScamService_Service_StartDelayed {
+        public static string OScam_StartDelayed {
             get {
-                return ResourceManager.GetString("OScamService_Service_StartDelayed", resourceCulture);
+                return ResourceManager.GetString("OScam_StartDelayed", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Service start start failed! ähnelt.
         /// </summary>
-        public static string OScamService_Service_StartFailed {
+        public static string OScam_StartFailed {
             get {
-                return ResourceManager.GetString("OScamService_Service_StartFailed", resourceCulture);
+                return ResourceManager.GetString("OScam_StartFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Starting &quot;OScam&quot; with the following command: ähnelt.
+        /// </summary>
+        public static string OScam_StartOScam {
+            get {
+                return ResourceManager.GetString("OScam_StartOScam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die There was an error starting &quot;OScam&quot; - e.g. &quot;OScam&quot; binary does not exist! ähnelt.
+        /// </summary>
+        public static string OScam_StartOScam_Error {
+            get {
+                return ResourceManager.GetString("OScam_StartOScam_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &quot;OScam&quot; processes are running. Attempting to kill all &quot;OScam&quot; processes. ähnelt.
+        /// </summary>
+        public static string OScam_StopOScam {
+            get {
+                return ResourceManager.GetString("OScam_StopOScam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Not executed with administrative permissions - expect untested misbehavior! ähnelt.
+        /// </summary>
+        public static string Program_AdministratorRequired {
+            get {
+                return ResourceManager.GetString("Program_AdministratorRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Windows service to start and/or stop OScam binaries. ähnelt.
+        /// </summary>
+        public static string Program_Description {
+            get {
+                return ResourceManager.GetString("Program_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die KON.OScamService ähnelt.
+        /// </summary>
+        public static string Program_DisplayName {
+            get {
+                return ResourceManager.GetString("Program_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Application ähnelt.
+        /// </summary>
+        public static string Program_LogName {
+            get {
+                return ResourceManager.GetString("Program_LogName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die KON.OScamService ähnelt.
+        /// </summary>
+        public static string Program_Name {
+            get {
+                return ResourceManager.GetString("Program_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Press enter to exit ... ähnelt.
+        /// </summary>
+        public static string Program_RunAsConsole {
+            get {
+                return ResourceManager.GetString("Program_RunAsConsole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Installing service at ähnelt.
+        /// </summary>
+        public static string Service_Installing {
+            get {
+                return ResourceManager.GetString("Service_Installing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Un-/Installing service at ähnelt.
+        /// </summary>
+        public static string Service_Uninstalling {
+            get {
+                return ResourceManager.GetString("Service_Uninstalling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die There was an error un-/installing the service: ähnelt.
+        /// </summary>
+        public static string Service_Uninstalling_Error {
+            get {
+                return ResourceManager.GetString("Service_Uninstalling_Error", resourceCulture);
             }
         }
     }

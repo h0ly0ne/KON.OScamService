@@ -1,27 +1,18 @@
 using System;
-using System.Diagnostics;
 using System.Runtime.Versioning;
 using System.Windows.Forms;
 
 using Topshelf;
 
-using static System.String;
-
-namespace KON.OScamService
-{
+namespace KON.OScamService {
     [SupportedOSPlatform("windows")]
-    internal static class Program
-	{
-        public static string strServiceName = Resources.OScamService_Service_Name;
-
+    public static class Program {
         private static void Main(string[] args) {
             if (Environment.UserInteractive) {
-                var strArguments = Concat(args);
-
                 if (!Global.IsAdministrator())
-                    MessageBox.Show(Resources.OScamService_Service_AdministratorRequired, strServiceName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(Resources.Program_AdministratorRequired, Resources.Program_Name, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                switch (strArguments) {
+                switch (string.Concat(args)) {
             	    case "install": {
                         InstallService();
             		    break;
@@ -31,13 +22,12 @@ namespace KON.OScamService
                         break;
                     }
                     case "console": {
-                        var osCurrentOscamSVC = new Service();
-                        osCurrentOscamSVC.RunAsConsole(args);
+                        new Service().RunAsConsole(args);
                         break;
                     }
                     default: {
-                        var oscCurrentOscamSVCConfig = new frmConfiguration();
-                        oscCurrentOscamSVCConfig.ShowDialog();
+                        Global.ShowWindow(Global.GetConsoleWindow(), 0);
+                        new frmConfiguration().ShowDialog();
                         break;
                     }
                 }
@@ -46,38 +36,34 @@ namespace KON.OScamService
                 Environment.ExitCode = ServiceFactory();
         }
 
-        public static void InstallService() {
+        private static void InstallService() {
             try {
-                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.OScamService_Console_UnInstalling + Empty.Space() + Process.GetCurrentProcess().MainModule.FileName, 2000, WindowsEventLogger.LogType.Information);
-                Global.welCurrentWindowsEventLogger.WriteConsole(Resources.OScamService_Console_UnInstalling + Empty.Space() + Process.GetCurrentProcess().MainModule.FileName, WindowsEventLogger.LogType.Information, true);
+                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.Service_Installing + string.Empty.Space() + Environment.ProcessPath, 0, WindowsEventLogger.LogType.Information, true);
                 Environment.ExitCode = ServiceFactory();
             }
             catch (Exception excCurrentException) {
-                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.OScamService_Console_UnInstalling_Error + Empty.Space() + excCurrentException.Message, 2000, WindowsEventLogger.LogType.Error);
-                Global.welCurrentWindowsEventLogger.WriteConsole(Resources.OScamService_Console_UnInstalling_Error + Empty.Space() + excCurrentException.Message, WindowsEventLogger.LogType.Error, true);
+                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.Service_Uninstalling_Error + string.Empty.Space() + excCurrentException.Message, 0, WindowsEventLogger.LogType.Error, true);
             }
         }
-		public static void UnInstallService() {
+        private static void UnInstallService() {
             try {
-                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.OScamService_Console_UnInstalling + Empty.Space() + Process.GetCurrentProcess().MainModule.FileName, 2001, WindowsEventLogger.LogType.Information);
-                Global.welCurrentWindowsEventLogger.WriteConsole(Resources.OScamService_Console_UnInstalling + Empty.Space() + Process.GetCurrentProcess().MainModule.FileName, WindowsEventLogger.LogType.Information, true);
+                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.Service_Uninstalling + string.Empty.Space() + Environment.ProcessPath, 0, WindowsEventLogger.LogType.Information, true);
                 Environment.ExitCode = ServiceFactory();
             }
             catch (Exception excCurrentException) {
-                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.OScamService_Console_UnInstalling_Error + Empty.Space() + excCurrentException.Message, 2000, WindowsEventLogger.LogType.Error);
-                Global.welCurrentWindowsEventLogger.WriteConsole(Resources.OScamService_Console_UnInstalling_Error + Empty.Space() + excCurrentException.Message, WindowsEventLogger.LogType.Error, true);
+                Global.welCurrentWindowsEventLogger.WriteEntry(Resources.Service_Uninstalling_Error + string.Empty.Space() + excCurrentException.Message, 0, WindowsEventLogger.LogType.Error, true);
             }
         }
 
-        public static int ServiceFactory() {
+        private static int ServiceFactory() {
             var tecCurrentTopshelfExitCode = HostFactory.Run(hcCurrentHostConfigurator => {
                 hcCurrentHostConfigurator.Service<Service>(scCurrentServiceConfigurator => { scCurrentServiceConfigurator.ConstructUsing(_ => new Service()); scCurrentServiceConfigurator.WhenStarted(sfCurrentServiceFactory => sfCurrentServiceFactory.Start()); scCurrentServiceConfigurator.WhenStopped(sfCurrentServiceFactory => sfCurrentServiceFactory.Stop()); });
                 hcCurrentHostConfigurator.RunAsLocalSystem();
                 hcCurrentHostConfigurator.StartAutomatically();
                 hcCurrentHostConfigurator.EnableServiceRecovery(srcCurrentServiceRecoveryConfiguration => { srcCurrentServiceRecoveryConfiguration.RestartService(1); });
-                hcCurrentHostConfigurator.SetServiceName(strServiceName);
-                hcCurrentHostConfigurator.SetDisplayName(strServiceName);
-                hcCurrentHostConfigurator.SetDescription(strServiceName);
+                hcCurrentHostConfigurator.SetServiceName(Resources.Program_Name);
+                hcCurrentHostConfigurator.SetDisplayName(Resources.Program_DisplayName);
+                hcCurrentHostConfigurator.SetDescription(Resources.Program_Description);
             });
 
             return (int)Convert.ChangeType(tecCurrentTopshelfExitCode, tecCurrentTopshelfExitCode.GetTypeCode());

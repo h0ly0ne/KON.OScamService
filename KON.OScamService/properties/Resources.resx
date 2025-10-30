@@ -123,28 +123,22 @@
   <data name="frmConfiguration_btnSave_Text" xml:space="preserve">
     <value>&amp;Save</value>
   </data>
-  <data name="frmConfiguration_srsKeyDelayStart" xml:space="preserve">
-    <value>DelayStart</value>
+  <data name="frmConfiguration_srsKeyStartDelay" xml:space="preserve">
+    <value>StartDelay</value>
   </data>
-  <data name="OScamService_BinaryFileName_OScam" xml:space="preserve">
-    <value>oscam.exe</value>
-  </data>
-  <data name="OScamService_Service_LogName" xml:space="preserve">
+  <data name="Program_LogName" xml:space="preserve">
     <value>Application</value>
   </data>
-  <data name="OScamService_Service_Name" xml:space="preserve">
+  <data name="Program_Name" xml:space="preserve">
     <value>KON.OScamService</value>
   </data>
-  <data name="OScamService_BinaryFileTitle_OScam" xml:space="preserve">
-    <value>oscam</value>
-  </data>
-  <data name="OScamService_Global_Logging_StartOScam" xml:space="preserve">
+  <data name="OScam_StartOScam" xml:space="preserve">
     <value>Starting "OScam" with the following command:</value>
   </data>
-  <data name="OScamService_Global_Logging_StopOScam" xml:space="preserve">
+  <data name="OScam_StopOScam" xml:space="preserve">
     <value>"OScam" processes are running. Attempting to kill all "OScam" processes.</value>
   </data>
-  <data name="OScamService_Service_RunAsConsole" xml:space="preserve">
+  <data name="Program_RunAsConsole" xml:space="preserve">
     <value>Press enter to exit ...</value>
   </data>
   <data name="frmConfiguration_srsKeyWebServiceTimeout" xml:space="preserve">
@@ -159,19 +153,19 @@
   <data name="frmConfiguration_srsKeyWebServiceUrl_DefaultValue" xml:space="preserve">
     <value>http://localhost:8888/oscamapi.html?part=status</value>
   </data>
-  <data name="frmConfiguration_srsKeyDelayStart_DefaultValue" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyStartDelay_DefaultValue" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="OScamService_Service_StartDelayed" xml:space="preserve">
+  <data name="OScam_StartDelayed" xml:space="preserve">
     <value>Service start delayed!</value>
   </data>
-  <data name="OScamService_Global_Logging_StartOScam_Error" xml:space="preserve">
+  <data name="OScam_StartOScam_Error" xml:space="preserve">
     <value>There was an error starting "OScam" - e.g. "OScam" binary does not exist!</value>
   </data>
-  <data name="OScamService_OScam_Restart_NotRequired" xml:space="preserve">
+  <data name="OScam_Restart_NotRequired" xml:space="preserve">
     <value>"OScam" restart not required!</value>
   </data>
-  <data name="OScamService_OScam_Restart_Required" xml:space="preserve">
+  <data name="OScam_Restart_Required" xml:space="preserve">
     <value>"OScam" restart required!</value>
   </data>
   <data name="frmConfiguration_srsKeyLogLevel" xml:space="preserve">
@@ -180,7 +174,7 @@
   <data name="frmConfiguration_srsKeyLogLevel_DefaultValue" xml:space="preserve">
     <value>Warning</value>
   </data>
-  <data name="OScamService_Global_Logging_RestartOScam" xml:space="preserve">
+  <data name="OScam_RestartOScam" xml:space="preserve">
     <value>Restarting "OScam"</value>
   </data>
   <data name="frmConfiguration_srsKeyLogToConsole" xml:space="preserve">
@@ -189,7 +183,7 @@
   <data name="frmConfiguration_srsKeyLogToConsole_DefaultValue" xml:space="preserve">
     <value>false</value>
   </data>
-  <data name="OScamService_Service_AdministratorRequired" xml:space="preserve">
+  <data name="Program_AdministratorRequired" xml:space="preserve">
     <value>Not executed with administrative permissions - expect untested misbehavior!</value>
   </data>
   <data name="frmConfiguration_srsKeyVerboseLogging" xml:space="preserve">
@@ -198,10 +192,10 @@
   <data name="frmConfiguration_srsKeyVerboseLogging_DefaultValue" xml:space="preserve">
     <value>false</value>
   </data>
-  <data name="OScamService_Console_UnInstalling" xml:space="preserve">
+  <data name="Service_Uninstalling" xml:space="preserve">
     <value>Un-/Installing service at</value>
   </data>
-  <data name="OScamService_Console_UnInstalling_Error" xml:space="preserve">
+  <data name="Service_Uninstalling_Error" xml:space="preserve">
     <value>There was an error un-/installing the service:</value>
   </data>
   <data name="frmConfiguration_srsKeyCheckInterval" xml:space="preserve">
@@ -210,19 +204,55 @@
   <data name="frmConfiguration_srsKeyCheckInterval_DefaultValue" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="OScamService_Service_StartFailed" xml:space="preserve">
+  <data name="OScam_StartFailed" xml:space="preserve">
     <value>Service start start failed!</value>
   </data>
-  <data name="frmConfiguration_srsKeyCheckEnable" xml:space="preserve">
+  <data name="frmConfiguration_srsKeyWebServiceCheckEnable" xml:space="preserve">
     <value>CheckEnable</value>
   </data>
-  <data name="frmConfiguration_srsKeyCheckEnable_DefaultValue" xml:space="preserve">
-    <value>True</value>
+  <data name="frmConfiguration_srsKeyWebServiceCheckEnable_DefaultValue" xml:space="preserve">
+    <value>true</value>
   </data>
   <data name="frmConfiguration_srsKeyAdditionalStartupParameters" xml:space="preserve">
     <value>AdditionalStartupParameters</value>
   </data>
   <data name="frmConfiguration_srsKeyAdditionalStartupParameters_DefaultValue" xml:space="preserve">
     <value>-d 0</value>
+  </data>
+  <data name="Service_Installing" xml:space="preserve">
+    <value>Installing service at</value>
+  </data>
+  <data name="frmConfiguration_srsKeyOScam_BinaryTitle_DefaultValue" xml:space="preserve">
+    <value>oscam</value>
+  </data>
+  <data name="frmConfiguration_srsKeyOScam_BinaryFilename_DefaultValue" xml:space="preserve">
+    <value>oscam.exe</value>
+  </data>
+  <data name="OScam_RequestTimedOut" xml:space="preserve">
+    <value>HttpWebRequest Time-Out!</value>
+  </data>
+  <data name="OScam_RequestDisposed" xml:space="preserve">
+    <value>HttpWebRequest Dispose successful!</value>
+  </data>
+  <data name="OScam_ResponseDisposed" xml:space="preserve">
+    <value>HttpWebResponse Dispose successful!</value>
+  </data>
+  <data name="frmConfiguration_srsKeyOScam_BinaryFilepath_DefaultValue" xml:space="preserve">
+    <value>C:\Program Files\KON.OScamService\3rdparty\oscam</value>
+  </data>
+  <data name="frmConfiguration_srsKeyOScam_BinaryFilepath" xml:space="preserve">
+    <value>OScam_BinaryFilepath</value>
+  </data>
+  <data name="frmConfiguration_srsKeyOScam_BinaryFilename" xml:space="preserve">
+    <value>OScam_BinaryFilename</value>
+  </data>
+  <data name="frmConfiguration_srsKeyOScam_BinaryTitle" xml:space="preserve">
+    <value>OScam_BinaryTitle</value>
+  </data>
+  <data name="Program_DisplayName" xml:space="preserve">
+    <value>KON.OScamService</value>
+  </data>
+  <data name="Program_Description" xml:space="preserve">
+    <value>Windows service to start and/or stop OScam binaries.</value>
   </data>
 </root>

@@ -171,23 +171,13 @@
         "InstallerBootstrapper" = "3:2"
             "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
             {
-            "Enabled" = "11:TRUE"
+            "Enabled" = "11:FALSE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.6.0.x64"
-                    {
-                    "Name" = "8:.NET Runtime 6.0.5 (x64)"
-                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.6.0.x64"
-                    }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.CoreRuntime.6.0.x86"
-                    {
-                    "Name" = "8:.NET Runtime 6.0.5 (x86)"
-                    "ProductCode" = "8:Microsoft.NetCore.CoreRuntime.6.0.x86"
-                    }
                 }
             }
         }
@@ -754,28 +744,6 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_2D35E87ADB63419C99A75FFC28B9A48E"
-                    {
-                    "Name" = "8:log"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_1C44102DFC6246B6A7D4D5225EA5DDF5"
-                        "Folders"
-                        {
-                        }
-                    }
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_7C459AD0DC294293825737CDC7A8C02F"
-                    {
-                    "Name" = "8:temp"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_9BA39FFF9CBA4AC8B3A72B7E1E7A5B00"
-                        "Folders"
-                        {
-                        }
-                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_F59B3FBAD06749E6A285CB77477FA720"
                     {
                     "Name" = "8:3rdparty"
@@ -871,6 +839,28 @@
                             "Property" = "8:_8B3E7E6075A643CBB41FD725741E6BD5"
                                 "Folders"
                                 {
+                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_7204F289247A45A69C6EF2F91E601329"
+                                    {
+                                    "Name" = "8:log"
+                                    "AlwaysCreate" = "11:TRUE"
+                                    "Condition" = "8:"
+                                    "Transitive" = "11:FALSE"
+                                    "Property" = "8:_1C44102DFC6246B6A7D4D5225EA5DDF5"
+                                        "Folders"
+                                        {
+                                        }
+                                    }
+                                    "{9EF0B969-E518-4E46-987F-47570745A589}:_CC5A3AA1BDB5413FB913C05E13D3A8B5"
+                                    {
+                                    "Name" = "8:temp"
+                                    "AlwaysCreate" = "11:TRUE"
+                                    "Condition" = "8:"
+                                    "Transitive" = "11:FALSE"
+                                    "Property" = "8:_9BA39FFF9CBA4AC8B3A72B7E1E7A5B00"
+                                        "Folders"
+                                        {
+                                        }
+                                    }
                                 }
                             }
                             "{9EF0B969-E518-4E46-987F-47570745A589}:_E47FA65B013A4CC6B38918ADF5A75E0E"
@@ -905,12 +895,12 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KON.OScamService"
         "ProductCode" = "8:{DB9DF77E-2DC2-4AC3-A2F0-EE3BFC362070}"
-        "PackageCode" = "8:{9282FD3A-2FE0-458F-BF01-50AD27763A61}"
+        "PackageCode" = "8:{B6CC2010-D0A3-43B3-9EE5-8B090DF17380}"
         "UpgradeCode" = "8:{B331D5D9-7BFA-486A-BD4C-3D27E6B37B53}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
-        "DetectNewerInstalledVersion" = "11:TRUE"
+        "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:KON"
@@ -1025,6 +1015,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3D70CB25F10148008F8177C7AF567D54"
+            {
+            "Name" = "8:KON.OScamService Configuration"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_07DD574B02A9470F856ACAE9611F5BC2"
+            "Folder" = "8:_1BF67479234240519D807E3BF3CFDEC8"
+            "WorkingFolder" = "8:_64B941CBCF084D91A63FFB02376F2691"
+            "Icon" = "8:_02510E27443B43CF906B09DDE1DF9EB4"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
