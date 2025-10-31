@@ -38,7 +38,6 @@
             cbVerboseLogging = new System.Windows.Forms.CheckBox();
             nudOScamCheckInterval = new System.Windows.Forms.NumericUpDown();
             lbOScamCheckInterval = new System.Windows.Forms.Label();
-            cbWebServiceEnabled = new System.Windows.Forms.CheckBox();
             lbOScamAdditionalParameters = new System.Windows.Forms.Label();
             tbOScamAdditionalParameters = new System.Windows.Forms.TextBox();
             tbOScamBinaryTitle = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             tbWebServiceUrl = new System.Windows.Forms.TextBox();
             lbWebServiceTimeout = new System.Windows.Forms.Label();
             lbWebServiceUrl = new System.Windows.Forms.Label();
+            cbWebServiceEnabled = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)nudOScamStartDelay).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudOScamCheckInterval).BeginInit();
             gbWebService.SuspendLayout();
@@ -143,19 +143,6 @@
             lbOScamCheckInterval.TabIndex = 20;
             lbOScamCheckInterval.Text = "OScam CheckInterval (s):";
             // 
-            // cbWebServiceEnabled
-            // 
-            cbWebServiceEnabled.AutoSize = true;
-            cbWebServiceEnabled.Checked = true;
-            cbWebServiceEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
-            cbWebServiceEnabled.Location = new System.Drawing.Point(411, 0);
-            cbWebServiceEnabled.Name = "cbWebServiceEnabled";
-            cbWebServiceEnabled.Size = new System.Drawing.Size(68, 19);
-            cbWebServiceEnabled.TabIndex = 23;
-            cbWebServiceEnabled.Text = "Enabled";
-            cbWebServiceEnabled.UseVisualStyleBackColor = true;
-            cbWebServiceEnabled.CheckedChanged += cbWebServiceEnabled_CheckedChanged;
-            // 
             // lbOScamAdditionalParameters
             // 
             lbOScamAdditionalParameters.AutoSize = true;
@@ -234,7 +221,6 @@
             gbWebService.Controls.Add(tbWebServiceUrl);
             gbWebService.Controls.Add(lbWebServiceTimeout);
             gbWebService.Controls.Add(lbWebServiceUrl);
-            gbWebService.Controls.Add(cbWebServiceEnabled);
             gbWebService.Location = new System.Drawing.Point(12, 195);
             gbWebService.Name = "gbWebService";
             gbWebService.Size = new System.Drawing.Size(482, 87);
@@ -279,11 +265,25 @@
             lbWebServiceUrl.TabIndex = 24;
             lbWebServiceUrl.Text = "Web Service Url:";
             // 
+            // cbWebServiceEnabled
+            // 
+            cbWebServiceEnabled.AutoSize = true;
+            cbWebServiceEnabled.Checked = true;
+            cbWebServiceEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
+            cbWebServiceEnabled.Location = new System.Drawing.Point(423, 193);
+            cbWebServiceEnabled.Name = "cbWebServiceEnabled";
+            cbWebServiceEnabled.Size = new System.Drawing.Size(68, 19);
+            cbWebServiceEnabled.TabIndex = 35;
+            cbWebServiceEnabled.Text = "Enabled";
+            cbWebServiceEnabled.UseVisualStyleBackColor = true;
+            cbWebServiceEnabled.CheckedChanged += cbWebServiceEnabled_CheckedChanged;
+            // 
             // frmConfiguration
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(512, 387);
+            Controls.Add(cbWebServiceEnabled);
             Controls.Add(gbWebService);
             Controls.Add(tbOScamBinaryFilepath);
             Controls.Add(lbOScamBinaryFilepath);
@@ -328,7 +328,6 @@
         private System.Windows.Forms.CheckBox cbVerboseLogging;
         private System.Windows.Forms.NumericUpDown nudOScamCheckInterval;
         private System.Windows.Forms.Label lbOScamCheckInterval;
-        private System.Windows.Forms.CheckBox cbWebServiceEnabled;
         private System.Windows.Forms.Label lbOScamAdditionalParameters;
         private System.Windows.Forms.TextBox tbOScamAdditionalParameters;
         private System.Windows.Forms.TextBox tbOScamBinaryTitle;
@@ -342,5 +341,6 @@
         private System.Windows.Forms.TextBox tbWebServiceUrl;
         private System.Windows.Forms.Label lbWebServiceTimeout;
         private System.Windows.Forms.Label lbWebServiceUrl;
+        private System.Windows.Forms.CheckBox cbWebServiceEnabled;
     }
 }

@@ -241,7 +241,7 @@ namespace KON.OScamService {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die CheckEnable ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die WebServiceCheckEnable ähnelt.
         /// </summary>
         public static string frmConfiguration_srsKeyWebServiceCheckEnable {
             get {

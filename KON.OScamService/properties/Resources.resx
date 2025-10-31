@@ -208,7 +208,7 @@
     <value>Service start start failed!</value>
   </data>
   <data name="frmConfiguration_srsKeyWebServiceCheckEnable" xml:space="preserve">
-    <value>CheckEnable</value>
+    <value>WebServiceCheckEnable</value>
   </data>
   <data name="frmConfiguration_srsKeyWebServiceCheckEnable_DefaultValue" xml:space="preserve">
     <value>true</value>
