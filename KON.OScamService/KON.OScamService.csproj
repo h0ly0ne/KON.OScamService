@@ -72,7 +72,4 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="3rdparty\openssl\1.1.1w\x86\" />
-  </ItemGroup>
 </Project>
